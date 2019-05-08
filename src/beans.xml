@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+<!--  using setter injection-->	 
+<bean id="emp1" class="com.cg.bean.Employee">
+<property name="empId" value="177741"></property>
+<property name="name" value="Mari"></property>
+<property name="salary" value="45698"></property>
+<property name="location" value="France"></property> 
+<property name="married" value="false"></property>
+
+</bean>
+<!-- Using constructor  -->
+<bean id="emp2" class="com.cg.bean.Employee">
+<constructor-arg index="0" value="177786"></constructor-arg>
+<constructor-arg index="1" value="Marimuthu"></constructor-arg>
+<constructor-arg index="2" value="Miami"></constructor-arg>
+<constructor-arg index="3" value="77786"></constructor-arg>
+</bean>
+</beans>
